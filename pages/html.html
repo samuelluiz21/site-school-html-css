@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+   <link rel="stylesheet" href="../css/default.css" />
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettyify.js"></script>
+</head>
+  
+<body>
+    <h1 class="default-theme">HTML</h1>
+    <h2><strong>Sumário</strong></h2>
+    <ul>
+        <li><a href="#html">O que é HTML</a></li>
+        <li><a href="#sao_tags">O que são Tags?</a></li>
+        <li><a href="#estrutura_basica">Estrutura Básica de um documento HTML</a></li>
+        <li><a href="#principais_tags">Principais Tags HTML</a></li>
+        <li><a href="#imagens">Imagens</a></li>
+    </ul>
+
+    <h2 id="html">O que é HTML?</h2>
+    <p>HTML(HyperText Markup Language) é uma Linguagem de Marcação de HiperTexto responsável em exibir conteúdo na Web.</p>
+    <p>O HTML usa "Marcação" para para exibir conteúdos em um navegador da Web.</p>
+    <p>A marcação HTML utiliza o sinal de menor (
+        &lt; ) o nome do elemento e o sinal de maior (&gt; ), assim: 
+        <nome do elemento>. Essas marcação são chamadas de "tags "</nome>. </p>
+
+    <h2 id="sao_tags">O que são Tags?</h2>
+        <p>As "Tags " são o conjunto de caracteres usados para formar um elemento HTML. Exemplo: Quando mencionamos a tag "p " estamos referenciado estes caracateres: &lt;p&gt;</p>
+        <p>Existem 2 tipos de Tags:</p>
+        <ul>
+            <li>Tags que <strong>não</strong> necessitam de fechamento. Exemplos: &lt;br&gt; &lt;hr&gt; &lt;meta&gt; &lt;img&gt; </li>
+            <li>Tags que necessitam de fechamento. Exemplos: &lt;p&gt; &lt;/p&gt; &lt;html&gt; &lt;/html&gt; &lt;body&gt; &lt;/body&gt; </li>
+        </ul>
+        
+    <h2 id="estrutura_basica">Estrutura Básica de um documento HTML</h2>
+    <p>
+        Um arquivo HTML deve possuir uma estrutura básica de elementos, composta pelas tags: composta pelas 
+        tags: &lt;!DOCTYPE&lt; &lt;html&gt; &lt;head&lt; &lt;body&gt;. Veja a seguir uma estrutura básica de um documento HTML.
+    </p>
+
+    <pre class="prettyprint">
+        <code class="lang-html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Título&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    Código html
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <h2 id="principais_tags">Principais Tags HTML</h2>
+    <h3>Títulos</h3>
+    <p>Quando queremos indicar que um texto é um título em nossa página, utilizamos as tags de heading em sua marcação:</p>
+    <p>Exemplo do uso do Código:</p>
+    <pre class="prettyprint">
+        <code class="lang-html">
+            &lt;h1&gt; Titulo Principal &lt;/h1&gt;
+            &lt;h2&gt; Titulo Secundario &lt;/h2&gt;
+        </code>
+    </pre>
+    <p>Resultado:</p>
+    <h1>Titulo Principal</h1>
+    <h2>Titulo Principal</h2>
+
+    <h3>Parágrafos</h3>
+    <p>Para Exibir qualquer texto em nossa página</p>
+    <p>Exemplo do uso do código:</p>
+    <pre class="prettyint">
+        <code class="lang-html">
+            &lt;p&gt; Primeiro Parágrafo &lt;/p&gt;
+            &lt;p&gt; Segundo Parágrafo &lt;/p&gt;
+        </code>
+    </pre>
+    <p>Resultado:</p>
+    <p>Primeiro Parágrafo</p>
+    <p>Segundo Parágrafo</p>
+
+    <h3 ld="Imagens">Imagens</h3>
+    <p>Para incluir uma imagem, utiliza-se a tag &lt;img&gt;. Esta tag não deve ser fechada. Seus atributos obrigatórios são: "src": do inglês “source” (fonte), que é o caminho da imagem e o "alt": texto alternativo, que serve para quando não puder exibira imagem.</p>
+    <p>Exemplo de uso do código:</p>
+    <pre class="prettyprint">
+        <code class="lang-html">
+            &lt;img src="img/logo.utfpr.png" alt="Logo da UTFPR"&gt;
+        </code>
+    </pre>
+    <p>Resultado:</p>
+    <img src="https://cdn.glitch.com/0df0bf92-e995-4cf8-9291-73d74e1b4457%2Flogo_utfpr.png?v=1614293902970" alt="Logo da UTFPR">
+</body>
+</html>

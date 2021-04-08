@@ -1,0 +1,102 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15 15;
+  margin-bottom: 6;
+  font-size: 20px;
+}
+
+nav a {
+  margin-right: 35;
+}
+
+
+/*FLEXBOX CSS */
+
+.banner {
+  padding: 15 0;
+  background: url(https://cdn.glitch.com/4fac4966-dba9-488b-b92b-1252f0533da5%2Fbanner.jpg?v=1615506420075);
+
+  color: var(--main-font-color);
+}
+
+/*COURSES*/
+.courses-header {
+  color: var(--main-bg-color);
+}
+
+.courses {
+  display: flex;
+}
+.course {
+  max-width: 33%;
+  padding: 0 3 8 0;
+}
+
+.course img {
+  border-radius: 7px 7px 0px 0px;
+}
+
+.inner {
+  padding: 5%;
+  border-radius: 0px 0px 7px 7px;
+}
+.inner p {
+  text-align: justify;
+}
+
+/*FOOTER*/
+footer {
+  padding: 15 0;
+  margin-top: 10px;
+}
+
+.social-icons i {
+  margin-right: 15px;
+}
+
+/* comentário */
+
+@media (max-width: 860px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 17;
+  }
+  nav a {
+    padding-bottom: 10;
+  }
+  #icon {
+    display: initial;
+    position: absolute;
+    align-self: flex-end;
+  }
+  #check:checked ~ nav {
+    display: none;
+  }
+
+  .courses {
+    flex-wrap: wrap;
+  }
+
+  .course {
+    max-width: 49%;
+  }
+}
+
+@media (max-width: 550px) {
+  .course {
+    max-width: 99%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 80%;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+  <link rel="stylesheet" href="../css/default.css" />
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+    <h1>CSS</h1>
+    <h2><strong>Sumário</strong></h2>
+    <ul>
+        <li><a href="#css">O que é CSS? </a> </li>
+        <li><a href="#fazer_css">O que é possível fazer com CSS? </a></li>
+        <li><a href="#regras_css">Criar Regras no CSS</a></li>
+        <li><a href="#seletores_css">Seletores CSS</a></li>
+        <ul>
+            <li><a href="#seletor_id">Seletor Id</a></li>
+            <li><a href="#seletor_classe">Seletor de Classe</a></li>
+            <li><a href="#seletor_hierarquia">Hierarquia de Seletor</a></li>
+        </ul>
+        <li><a href="#texto_propriedades">Propriedades de Texto em CSS</a></li>
+        <ul>
+            <li><a href="#texto_cor">Cores de Texto</a></li>
+            <li><a href="#texto_tamanho">Tamanho do Texto em CS</a></li>
+        </ul>
+    </ul>
+
+    <h2 id="css">O que é CSS?</h2>
+    <p>Cascading Style Sheets (CSS): podemos traduzir como Folhas de Estilo em Cascata. É no CSS que definimos o visual da página. Criamos o estilo da página por meio de regras, que são aplicadas em cascata.</p>
+
+    <h2 id="fazer_css">O que é possível fazer com CSS?</h2>
+    <ul>
+        <li>Alterar a fonte, cor e tamanho do texto.</li>
+        <li>Alterar o tamanho e cor de um bloco.</li>
+        <li>Definir margens e bordas.</li>
+        <li>Posicionar os blocos da página.</li>
+    </ul>
+
+    <h2 id="regras_css">Criar Regras no CSS</h2>
+    <p>Uma regra possui duas partes: o seletor e a declaração.
+    </p>
+    <p>- Seletor: define em quais elementos a regra será aplicada.
+    </p>
+    <p>- Declaração: define o visual.</p>
+    <p>Exemplo:</p>
+    <img src="https://cdn.glitch.com/4fac4966-dba9-488b-b92b-1252f0533da5%2Fregra_css.png?v=1614294398777" alt="Regra CSS?" />
+    <ul>
+        <li>p: é o seletor. Indica que todos os elementos &lt;p&gt; (Parágrafo) do HTML serão selecionados para aplicar a regra.</li>
+        <li>{}: as propriedades devem estar dentro das chaves.</li>
+        <li>font-size: é o nome de uma propriedade. Ela altera o tamanho da fonte.</li>
+        <li>20px: é o valor da propriedade. Neste caso, 20 pixels.
+        </li>
+    </ul>
+    <p>Exemplo de regra com várias propriedades:</p>
+    <img src="https://cdn.glitch.com/4fac4966-dba9-488b-b92b-1252f0533da5%2Fregra_varias_propriedades.png?v=1614293898847" alt="Regra Css com Várias Propriedades" />
+    <h2 id="seletores_css">Seletores CSS</h2>
+
+    <h3 id="seletor_id">Seletor id</h3>
+    <p>Também podemos selecionar um elemento HTML pelo valor do seu atributo “id”. Basta colocar no seletor #id.</p>
+    <p>Exemplo de como selecionar o elemento HTML com o id=”destaque”:</p>
+    <img src="https://cdn.glitch.com/4fac4966-dba9-488b-b92b-1252f0533da5%2Fseletor_id.png?v=1614294333977" alt="Seletor pelo ID" />
+
+    <h3 id="seletor_classe">Seletor de Classe</h3>
+    <p>O seletor de classe seleciona todos os elementos que possuem o atributo HTML “class” com um determinado valor. Esse atributo é global e é utilizado para aplicar o CSS.</p>
+    <p>Exemplo de Código HTML</p>
+    <pre class="prettyprint">
+        <code class="lang-css">
+            &lt;p&gt;Parágrafo normal&lt;/p&gt;
+            &lt;p class="destacado"&gt;Parágrafo destacado&lt;/p&gt;
+            &lt;p&gt;Parágrafo normal&lt;/p&gt;
+            &lt;p class="destacado"&gt;Parágrafo destacado&lt;/p&gt;
+        </code>
+    </pre>
+    <p>Código CSS</p>
+    <img src="https://cdn.glitch.com/4fac4966-dba9-488b-b92b-1252f0533da5%2Fseletor_classe.png?v=1614294368429" alt="Exemplo Classe CSS" />
+
+    <h3 id="seletor_hierarquia">Hierarquia no seletor</h3>
+    <p>Também é possível definir um seletor que procure um elemento dentro de outro elemento.</p>
+    <p>Sintaxes:</p>
+    <p> – nome1 nome2: seleciona descendente de “nome1”.</p>
+    <p> – nome1 &gt; nome2: selecionar “nome2” que é filho em primeiro nível de “nome1”. </p>
+    <p>Exemplo de Código HTML</p>
+    <pre class="prettyprint">
+        <code class="lang-css">
+            &lt;p&gt;Parágrafo dentro do corpo.&lt;/p&gt;
+            &lt;section&gt;
+              &lt;p&gt;Parágrafo dentro da seção&lt;/p&gt;
+              &lt;article&gt;
+                 &lt;p&gt;Parágrafo dentro do artigo&lt;/p&gt;
+              &lt;/article&gt;
+            &lt;/section&gt;          
+        </code>
+    </pre>
+    <p>Usando: section &gt; p apenas o parágrafo dentro da seção será aplicado o estilo</p>
+    <p>Usando: section p será aplicado o estilo no parágrafo dentro do artigo e dentro da seção.</p>
+
+    <h2 id="texto_propriedades">Propriedades de Texto em CSS</h2>
+    <h3 id="texto_cor">Cores de Texto</h3>
+    <p>Em HTML são utilizados os nomes das cores em inglês ou valores hexadecimais para definir uma cor.</p>
+    <p>Exemplos de cores em RGB (Red Green Blue): vermelho: #FF0000, verde: #00FF00, azul: #0000FF, branco: #FFFFFF, preto: #000000</p>
+
+    <h3 id="texto_tamanho">Tamanho do Texto em CSS</h3>
+    <p>Em CSS, muitas propriedades alteram tamanhos. Salvo em algumas situações, sempre é necessário explicitar qual a unidade de medida utilizada. A mais conhecida é o pixel </p>
+    <p>Unidade em: Essa unidade define um tamanho relativo ao tamanho da fonte padrão do navegador (geralmento definidade em 16px). </p>
+    <p>Exemplo de uso: .maior { font-size: 2.5em }</p>
+
+    <h3>Blocos</h3>
+    <h3>Possicionamento</h3>
+</body>
+
+</html>
